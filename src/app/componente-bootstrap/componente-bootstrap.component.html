@@ -1,0 +1,29 @@
+<div class="container mt-4">
+    <!-- Interpolación -->
+    <h3 class="text-success">Interpolación</h3>
+    <p class="text-info">Nombre: <span class="fw-bold">{{ nombre }}</span></p>
+    <hr>
+
+    <!-- Property Binding -->
+    <h3 class="text-success">Property Binding</h3>
+    <img [src]="profileImage" class="img-thumbnail" alt="Imagen de Perfil">
+    <hr>
+
+    <!-- Event Binding -->
+    <h3 class="text-success">Event Binding</h3>
+    <button class="btn btn-warning" (click)="cambiarNombre()">Cambiar Nombre</button>
+    <hr>
+
+    <!-- Two Way Binding -->
+    <h3 class="text-success">Two Way Binding</h3>
+    <div class="mb-3">
+        <label for="color" class="form-label">Selecciona tu color favorito</label>
+        <select class="form-select" [(ngModel)]="colorSeleccionado">
+            <option value="Rojo">Rojo</option>
+            <option value="Verde">Verde</option>
+            <option value="Azul">Azul</option>
+        </select>
+        <p class="text-muted mt-2">Tu color seleccionado es: <span class="text-primary">{{ colorSeleccionado }}</span>
+        </p>
+    </div>
+</div>

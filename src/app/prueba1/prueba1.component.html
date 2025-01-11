@@ -1,0 +1,20 @@
+<h1>prueba1 works!</h1>
+<hr>
+<h3>Interpolacion</h3>
+<label for="">Edad</label>
+<input type="text" value="{{edad}}">
+<br>
+<hr>
+<h3>Property Binding</h3>
+<img [src]="imageUrl">
+<br>
+<hr>
+<h3>Event Binding</h3>
+<button (click)="onClick()"> Da ckick </button>
+
+<br>
+<hr>
+<h3>Two Way Binding</h3>
+<label for="">Fruta</label>
+<input type="text" [(ngModel)]="frutas"> <br>
+<label for="{{frutas}}"></label>
